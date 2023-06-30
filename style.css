@@ -1,0 +1,288 @@
+@font-face {
+    font-family: HeliosExt;
+    src: url('fonts/heliosext.otf') format('otf');
+    font-weight: normal;
+}  
+
+@font-face {
+    font-family: HeliosExt;
+    src: url('fonts/heliosext_bold.otf') format('otf');
+    font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+.txt-header {
+    font-family: HeliosExt;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 120%;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.txt-subheader {
+    font-family: HeliosExt;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 120%;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.txt-regular {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 300;
+    letter-spacing: -0.05px;
+    color: var(--white);
+}
+
+.txt-button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 500;
+    letter-spacing: -0.05px;
+    color: var(--white);
+}
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --dark-bg-2: #1B1B1B;
+    --accent: #3D50FF;
+    --gradient: radial-gradient(147.12% 124.76% at 6.86% 83.96%, #EB9C00 0%, #FF4769 27.08%, #253BFF 66.38%, #00B2FF 100%);
+    --poizon-blue: #00E8F3;
+    --link-color: #3DB9FF;
+}
+
+body {
+    background: var(--black);
+    display: flex;
+    min-width: 320px;
+    padding: 0px 0px 100px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0px 20px 0px 20px;
+    max-width: 450px;
+    align-self: stretch; /* ??? */ 
+}
+
+.header {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+}
+
+.header__paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1 0 0;
+}
+
+.section-slideshow-wrapper {
+    padding-bottom: 40px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.section-originals {
+    padding-bottom: 40px;
+}
+
+.button {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 17px;
+    background: var(--gradient);
+    align-self: stretch;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.section-how-it-works {
+    padding-top: 40px;
+}
+
+.section-how-it-works__arrows-wrapper {
+    display: flex;
+    padding: 0px 13px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.section-way {
+    background: var(--dark-bg-2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.pill {
+    display: flex;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 60px;
+    border: 2px solid var(--accent);
+}
+
+.images-screens__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.images-screens__list {
+    display: inline-flex;
+    padding: 0px 20px;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.horizontal-scroll {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch; /* Для совместимости с Safari на iOS */
+    scrollbar-width: none; /* Скрыть полосу прокрутки в браузерах, поддерживающих новые стандарты */
+    -ms-overflow-style: none; /* Скрыть полосу прокрутки в IE и Edge, которые используют данное свойство */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none; /* Скрыть полосу прокрутки в Chrome, Safari и Opera */
+}
+
+/* Дополнительные стили для вашего контента */
+.horizontal-scroll > * {
+    white-space: nowrap; /* Запретить перенос текста на новую строку */
+}
+
+.accent-poizon-blue {
+    color: var(--poizon-blue);
+}
+
+.section-team-poizon-shop {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-team-poizon-shop__sales {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.group-of-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.info-card {
+    display: flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 0 0;
+    border-radius: 20px;
+    background: var(--dark-bg-2);
+    align-self: stretch;
+}
+
+.info-card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    flex: 1 0 0;
+}
+
+.text-with-icon {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.text-with-icon p {
+    width: 100%;
+}
+
+.txt-link {
+    color: var(--link-color);
+}
+
+.section-authenticity-guarantee .paragraph {
+    gap: 10px;
+}
+
+.dancing-poizon-video {
+    max-width: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-track-orders .container {
+    gap: 10px;
+}
+
+.section-track-orders__image {
+    width: 100%;
+    max-width: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-cta .paragraph {
+    gap: 10px;
+}

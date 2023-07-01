@@ -173,11 +173,18 @@ a {
     gap: 30px;
 }
 
+.images-screens__list img {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
 .horizontal-scroll {
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch; /* Для совместимости с Safari на iOS */
     scrollbar-width: none; /* Скрыть полосу прокрутки в браузерах, поддерживающих новые стандарты */
     -ms-overflow-style: none; /* Скрыть полосу прокрутки в IE и Edge, которые используют данное свойство */
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
 }
 
 .horizontal-scroll::-webkit-scrollbar {

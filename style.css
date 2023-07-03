@@ -1,12 +1,12 @@
 @font-face {
     font-family: HeliosExt;
-    src: url('fonts/heliosext.otf') format('otf');
+    src: url('fonts/heliosext.woff') format('woff');
     font-weight: normal;
 }  
 
 @font-face {
     font-family: HeliosExt;
-    src: url('fonts/heliosext_bold.otf') format('otf');
+    src: url('fonts/heliosext_bold.woff') format('woff');
     font-weight: bold;
 }
 

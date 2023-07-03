@@ -60,6 +60,12 @@
     --link-color: #3DB9FF;
 }
 
+html {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 body {
     background: var(--black);
     display: flex;
@@ -69,6 +75,7 @@ body {
     align-items: flex-start;
     gap: 20px;
     width: 100%;
+    max-width: 450px;
 }
 
 .container {

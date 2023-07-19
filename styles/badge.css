@@ -1,0 +1,23 @@
+.badge {
+  display: flex;
+  padding: 10px 20px 12px 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 30px;
+  background: var(--white);
+}
+
+.badge .icon {
+  width: 28px;
+  height: 28px;
+}
+
+.badge-secondary {
+  background: #f6f6f6;
+}
+
+.badge-dark-secondary {
+  background: #282828;
+}

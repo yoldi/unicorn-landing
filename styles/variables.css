@@ -1,0 +1,17 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --text-secondary-color: #484848;
+  --text-secondary-light-color: #838383;
+  --white: #ffffff;
+  --black: #000;
+  --gradient-color: radial-gradient(
+    147.12% 124.76% at 6.86% 83.96%,
+    #eb9c00 0%,
+    #ff4769 27.08%,
+    #253bff 66.38%,
+    #00b2ff 100%
+  );
+  --poizon-color: #02c1d2;
+  --background-secondary: #f1f1f1;
+}

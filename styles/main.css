@@ -930,6 +930,7 @@ body {
   color: var(--background-color);
   padding: 22px 22px 22px 30px;
   gap: 45px;
+  cursor: pointer;
 }
 
 .media-section .content-cards .card.telegram .image {

@@ -12,6 +12,19 @@
     #253bff 66.38%,
     #00b2ff 100%
   );
+  --pink-bg: #fde7f7;
   --poizon-color: #02c1d2;
   --background-secondary: #f1f1f1;
+
+  --media-width-sm: 600px;
+  --media-width-md: 960px;
+  --media-width-lg: 1280px;
+  --media-width-xl: 1512px;
+  --media-width-xxl: 1728px;
+
+  --container-max-width-sm: 100%;
+  --container-max-width-md: 100%;
+  --container-max-width-lg: 1200px;
+  --container-max-width-xl: 1312px;
+  --container-max-width-xxl: 1528px;
 }

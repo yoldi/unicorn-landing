@@ -7,7 +7,9 @@
   gap: 10px;
   width: fit-content;
   border-radius: 20px;
-  transition: background linear 0.3s;
+  transition-property: background, transform;
+  transition-duration:  0.3s;
+  transition-timing-function: linear;
   color: #000;
   font-family: "Open Sans", sans-serif;
   font-size: 25px;
@@ -17,6 +19,11 @@
   letter-spacing: -0.5px;
   border: none;
   cursor: pointer;
+  transform: scale(1);
+}
+
+.button:active {
+  transform: scale(0.95);
 }
 
 .button .logo-icon {
@@ -25,7 +32,9 @@
 }
 
 .button:hover {
-  transition: background linear 0.3s;
+  transition-property: background, transform;
+  transition-duration:  0.3s;
+  transition-timing-function: linear;
 }
 
 .button-gradient {
@@ -68,4 +77,9 @@
 
 .button-pink:hover {
   background: #ffa8e7;
+}
+
+.button-telegram {
+  background: #00abcc;
+  color: var(--white);
 }

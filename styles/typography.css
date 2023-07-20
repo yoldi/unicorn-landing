@@ -18,6 +18,10 @@
   color: var(--text-secondary-light-color);
 }
 
+.text-poizon-color {
+  color: #00abcc;
+}
+
 .header-1-text {
   font-family: "HeliosExt", "Open Sans", sans-serif;
   font-size: 60px;

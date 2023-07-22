@@ -231,6 +231,8 @@ section {
   min-height: 80%;
   top: calc(50% - 40px);
   max-height: calc(100vh - var(--header-height) - 80px);
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -280,26 +282,16 @@ section {
 }
 
 .main-section-right-side #main-section-video {
-  width: 100%;
+  width: auto;
   height: 100%;
   clip-path: inset(1px 1px);
 }
 
 .main-section-right-side .video-wrapper {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
-.main-section-right-side .video-wrapper::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 1px;
-  display: block;
-  background: var(--background-color);
-}
 
 .scrolling-text {
   position: absolute;

@@ -27,4 +27,12 @@
   --container-max-width-lg: 1200px;
   --container-max-width-xl: 1312px;
   --container-max-width-xxl: 1528px;
+
+  --container-padding-x: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --container-padding-x: 20px;
+  }
 }

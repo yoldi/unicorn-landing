@@ -31,6 +31,16 @@
   letter-spacing: -3px;
 }
 
+@media (max-width: 992px) {
+  .header-1-text {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 35px */
+    letter-spacing: -1.75px;
+  }
+}
+
 .header-2-text {
   font-family: "HeliosExt", "Open Sans", sans-serif;
   font-size: 50px;
@@ -38,6 +48,16 @@
   font-weight: 700;
   line-height: 100%; /* 50px */
   letter-spacing: -2.5px;
+}
+
+@media (max-width: 992px) {
+  .header-2-text {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 35px */
+    letter-spacing: -1.75px;
+  }
 }
 
 .header-2-regular-text {
@@ -49,6 +69,16 @@
   letter-spacing: -2.5px;
 }
 
+@media (max-width: 992px) {
+  .header-2-regular-text {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -1.75px;
+  }
+}
+
 .header-3-text {
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
@@ -56,6 +86,16 @@
   font-weight: 800;
   line-height: 120%; /* 36px */
   letter-spacing: -1.5px;
+}
+
+@media (max-width: 992px) {
+  .header-3-text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 24px */
+    letter-spacing: -1px;
+  }
 }
 
 .button-text {
@@ -67,6 +107,16 @@
   letter-spacing: -0.4px;
 }
 
+@media (max-width: 992px) {
+  .button-text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+}
+
 .big-text {
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
@@ -74,6 +124,16 @@
   font-weight: 400;
   line-height: 120%;
   letter-spacing: -1.5px;
+}
+
+@media (max-width: 992px) {
+  .big-text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+    letter-spacing: -1px;
+  }
 }
 
 .regular-text {
@@ -85,6 +145,16 @@
   letter-spacing: -0.4px;
 }
 
+@media (max-width: 992px) {
+  .regular-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.32px;
+  }
+}
+
 .regular-2-text {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -94,6 +164,16 @@
   letter-spacing: -0.32px;
 }
 
+@media (max-width: 992px) {
+  .regular-2-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 22.4px */
+    letter-spacing: -0.28px;
+  }
+}
+
 .button-2-text {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -101,4 +181,14 @@
   font-weight: 600;
   line-height: 160%; /* 25.6px */
   letter-spacing: -0.32px;
+}
+
+@media (max-width: 992px) {
+  .button-2-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 22.4px */
+    letter-spacing: -0.28px;
+  }
 }

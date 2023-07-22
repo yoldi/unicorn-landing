@@ -9,9 +9,22 @@
   background: var(--white);
 }
 
+@media (max-width: 992px) {
+  .badge {
+    padding: 8px 15px;
+  }
+}
+
 .badge .icon {
   width: 28px;
   height: 28px;
+}
+
+@media (max-width: 992px) {
+  .badge .icon {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .badge-secondary {

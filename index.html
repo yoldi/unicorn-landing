@@ -134,6 +134,7 @@
             class="video bg"
             id="main-section-video"
           >
+            <source src="./videos/mockup_2.mp4" type="video/mp4" />
             <source src="./videos/mockup_1.mp4" type="video/mp4" />
           </video>
         </div>
@@ -748,6 +749,14 @@
               class="image"
             />
             <img src="./icons/play-button.svg" alt="" class="play-button" />
+            <video
+              controls
+              preload="none"
+              class="excursion-video lazy"
+              id="excursion-video"
+            >
+              <source data-src="./videos/excursion.mp4" type="video/mp4" />
+            </video>
           </div>
           <a href="https://vk.com/poizon.shop" target="_blank" class="card vk">
             <img
@@ -768,13 +777,7 @@
             </div>
           </a>
           <div class="card video">
-            <video
-              autoplay
-              loop
-              muted
-              playsinline
-              class="video bg lazy"
-            >
+            <video autoplay loop muted playsinline class="video bg lazy">
               <source data-src="./videos/dancing-poizon.mp4" type="video/mp4" />
             </video>
           </div>
@@ -814,15 +817,6 @@
         </div>
       </div>
     </footer>
-
-    <video
-      controls
-      preload="none"
-      class="excursion-video lazy"
-      id="excursion-video"
-    >
-      <source data-src="./videos/excursion.mp4" type="video/mp4" />
-    </video>
     <script>
       var lazyLoadInstance = new LazyLoad({
         // Your custom settings go here
@@ -842,14 +836,20 @@
     excursionCard.addEventListener("click", () => {
       excursionVideo.classList.add("show")
       excursionVideo.play()
+
       if (excursionVideo.requestFullscreen) {
         excursionVideo.requestFullscreen()
       } else if (excursionVideo.webkitRequestFullscreen) {
         /* Safari */
         excursionVideo.webkitRequestFullscreen()
+      } else if (excursionVideo.webkitEnterFullscreen) {
+        /* Safari */
+        excursionVideo.webkitEnterFullscreen()
       } else if (excursionVideo.msRequestFullscreen) {
         /* IE11 */
         excursionVideo.msRequestFullscreen()
+      } else if (excursionVideo.children[0].webkitEnterFullscreen) {
+        excursionVideo.children[0].webkitEnterFullscreen()
       }
     })
 

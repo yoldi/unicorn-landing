@@ -1829,6 +1829,8 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: relative;
+  z-index: 0;
 }
 
 .media-section .content-cards .card.excursion .play-button {
@@ -2071,6 +2073,9 @@ section {
 }
 
 .excursion-video.show {
-  display: block;
+  display: flex;
+  width: 100%;
   height: auto;
+  position: absolute;
+  z-index: 99999;
 }

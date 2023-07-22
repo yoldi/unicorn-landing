@@ -225,11 +225,12 @@ section {
   width: calc((100% - 600px));
   height: calc(100vh - var(--header-height));
   position: absolute;
-  top: calc(50% - 20px);
   transform: translate(50%, -50%);
   right: calc(50% - (600px / 2) - 40px);
   z-index: 9;
   min-height: 80%;
+  top: calc(50% - 40px);
+  max-height: calc(100vh - var(--header-height) - 80px);
 }
 
 @media screen and (max-width: 1200px) {
@@ -268,7 +269,8 @@ section {
 @media screen and (min-width: 1512px) {
   .main-section-right-side {
     width: calc((var(--container-max-width-lg) - 200px));
-    top: calc(47%);
+    top: calc(50% - 40px);
+    max-height: calc(100vh - var(--header-height) - 80px);
   }
 }
 
@@ -292,7 +294,7 @@ section {
   position: absolute;
   right: 0;
   top: 0;
-  height: calc(100% - 53px);
+  height: 100%;
   width: 1px;
   display: block;
   background: var(--background-color);

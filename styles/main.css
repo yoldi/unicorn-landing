@@ -139,7 +139,7 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: calc(100vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height));
   overflow: hidden;
   width: 100vw;
   position: relative;
@@ -229,6 +229,7 @@ section {
   transform: translate(50%, -50%);
   right: calc(50% - (600px / 2) - 40px);
   z-index: 9;
+  min-height: 80%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -267,7 +268,7 @@ section {
 @media screen and (min-width: 1512px) {
   .main-section-right-side {
     width: calc((var(--container-max-width-lg) - 200px));
-    top: calc(50% - 40px);
+    top: calc(47%);
   }
 }
 

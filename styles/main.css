@@ -282,6 +282,7 @@ section {
 .main-section-right-side #main-section-video {
   width: 100%;
   height: 100%;
+  clip-path: inset(1px 1px);
 }
 
 .main-section-right-side .video-wrapper {

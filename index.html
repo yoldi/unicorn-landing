@@ -774,7 +774,6 @@
               muted
               playsinline
               class="video bg lazy"
-              id="media-section-video"
             >
               <source data-src="./videos/dancing-poizon.mp4" type="video/mp4" />
             </video>
@@ -816,7 +815,12 @@
       </div>
     </footer>
 
-    <video controls preload="none" class="excursion-video lazy" id="excursion-video">
+    <video
+      controls
+      preload="none"
+      class="excursion-video lazy"
+      id="excursion-video"
+    >
       <source data-src="./videos/excursion.mp4" type="video/mp4" />
     </video>
     <script>
@@ -829,9 +833,8 @@
 
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function (event) {
-      // const video = document.getElementById("main-section-video")
-
-      // video.play()
+      const video = document.getElementById("main-section-video")
+      video.play()
     })
     const excursionCard = document.getElementById("excursion-card")
     const excursionVideo = document.getElementById("excursion-video")

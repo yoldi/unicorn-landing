@@ -6,6 +6,19 @@
 @import url(./navigation.css);
 @import url(./main.css);
 
+.lazy {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    background-color: rgba(233, 233, 233, 0.9);
+  }
+}
+
 .main-section {
   --header-height: 110px;
   display: flex;
@@ -997,7 +1010,7 @@
   }
 }
 
-.catalog-2-section .cards .card .content .image {
+.catalog-2-section .cards .card .image {
   width: 100%;
   height: auto;
   object-fit: contain;

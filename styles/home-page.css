@@ -196,6 +196,7 @@
   display: flex;
   white-space: nowrap;
   z-index: 0;
+  gap: 50px;
 }
 
 @media screen and (max-width: 992px) {
@@ -356,10 +357,12 @@
 
 @media (max-width: 600px) {
   .catalog-section .brand-list {
-    --list-gap: 20%;
+    --list-gap: 56px;
     --item-length: 2;
     padding-top: 0px;
     flex-wrap: wrap;
+    gap: 50px var(--list-gap);
+    justify-content: space-between;
   }
 }
 
@@ -372,9 +375,8 @@
 
 @media (max-width: 600px) {
   .catalog-section .brand-list .item {
-    height: 73px;
-    width: auto;
-    margin: 5% 0;
+    height: auto;
+    width: calc(50% - 40px);
   }
 }
 
@@ -1354,6 +1356,10 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
+}
+
+.team-section .content .gradient-box .button {
+  text-wrap: nowrap;
 }
 
 @media (max-width: 650px) {

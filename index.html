@@ -29,8 +29,7 @@
       Unicorn - приложение для заказа оригинальных кроссовок с выгодой 40%.
     </title>
     <!-- Подключение внешних стилей -->
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/home-page.css" />
 
     <link
       rel="apple-touch-icon"
@@ -58,37 +57,39 @@
   </head>
   <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.4/dist/lazyload.min.js"></script>
   <body>
-    <header class="header container-md">
-      <img
-        src="icons/unicorn-logo.svg"
-        width="232"
-        height="50"
-        class="header-logo"
-      />
+    <header class="header">
+      <div class="container-md wrapper">
+        <img
+          src="icons/unicorn-logo.svg"
+          width="232"
+          height="50"
+          class="header-logo"
+        />
 
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#main-section" class="button-text">Приложение</a>
-        </li>
-        <li class="nav-item">
-          <a href="#catalog-section" class="button-text">Каталог</a>
-        </li>
-        <li class="nav-item">
-          <a href="#price-section" class="button-text">Цены</a>
-        </li>
-        <li class="nav-item">
-          <a href="#guarante-section" class="button-text">Гарантия</a>
-        </li>
-        <li class="nav-item">
-          <a href="#delivery-section" class="button-text">Доставка</a>
-        </li>
-        <li class="nav-item">
-          <a href="#review-section" class="button-text">Отзывы</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contact-section" class="button-text">Контакты</a>
-        </li>
-      </ul>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#main-section" class="button-text">Приложение</a>
+          </li>
+          <li class="nav-item">
+            <a href="#catalog-section" class="button-text">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a href="#price-section" class="button-text">Цены</a>
+          </li>
+          <li class="nav-item">
+            <a href="#guarante-section" class="button-text">Гарантия</a>
+          </li>
+          <li class="nav-item">
+            <a href="#delivery-section" class="button-text">Доставка</a>
+          </li>
+          <li class="nav-item">
+            <a href="#review-section" class="button-text">Отзывы</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact-section" class="button-text">Контакты</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <section class="main-section" id="main-section">
       <div class="container-md">
@@ -811,8 +812,8 @@
             </a>
           </div>
           <div class="info">
-            <div><a href="#" class="link">Договор оферты </a></div>
-            <div><a href="#" class="link">Политика конфиденциальности</a></div>
+            <div><a href="/offer.html" class="link">Договор оферты </a></div>
+            <div><a href="/policy.html" class="link">Политика конфиденциальности</a></div>
           </div>
         </div>
       </div>

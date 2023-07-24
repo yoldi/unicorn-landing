@@ -1,0 +1,51 @@
+@import url(./reset.css);
+@import url(./variables.css);
+@import url(./typography.css);
+@import url(./button.css);
+@import url(./badge.css);
+@import url(./navigation.css);
+@import url(./main.css);
+
+.main-content {
+  max-width: 860px;
+  padding: 130px 0;
+}
+
+span.regular-text {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  span.regular-text {
+    margin-top: 8px;
+  }
+}
+
+h2.header-3-text {
+  margin-top: 70px;
+}
+
+@media (max-width: 600px) {
+  h2.header-3-text {
+    margin-top: 50px;
+  }
+}
+
+p.regular-text {
+  margin: 30px 0;
+}
+
+p.regular-text strong {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+@media (max-width: 600px) {
+  p.regular-text {
+    margin-top: 30px;
+  }
+}
+
+.main-content a {
+  color: #3375f6;
+}

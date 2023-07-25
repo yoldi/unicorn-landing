@@ -49,3 +49,9 @@ p.regular-text strong {
 .main-content a {
   color: #3375f6;
 }
+
+.main-content ul {
+  display: block;
+  list-style-type: disc;
+  list-style-position: inside;
+}

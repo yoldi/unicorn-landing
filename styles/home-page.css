@@ -202,6 +202,7 @@
 @media screen and (max-width: 992px) {
   .scrolling-text {
     bottom: 30px;
+    gap: 30px;
   }
 }
 

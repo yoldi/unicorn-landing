@@ -1861,6 +1861,12 @@
   gap: 20px;
 }
 
+@media (max-width: 1320px) {
+  .footer .container-md {
+    padding: 37px var(--container-padding-x);
+  }
+}
+
 @media (max-width: 992px) {
   .footer .container-md {
     flex-direction: row;

@@ -22,6 +22,14 @@
   color: #00abcc;
 }
 
+.text-link-color {
+  color: var(--text-link-color);
+}
+
+.text-stroke-color {
+  color: var(--text-stroke-color);
+}
+
 .header-1-text {
   font-family: "HeliosExt", "Open Sans", sans-serif;
   font-size: 60px;

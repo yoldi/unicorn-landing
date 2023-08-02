@@ -106,6 +106,15 @@
   }
 }
 
+@media (max-width: 906px) {
+  .main-section-left-side .action-prize-item-box {
+    gap: 10px;
+  }
+  .main-section-left-side .action-prize-item-box .info-text br {
+    display: none;
+  }
+}
+
 .main-section-right-side {
   width: calc((100% - 600px));
   height: calc(100vh - var(--header-height));
@@ -1246,6 +1255,15 @@
   }
 }
 
+@media (max-width: 906px) {
+  .split-section .action-prize-item-box {
+    gap: 10px;
+  }
+  .split-section .action-prize-item-box .info-text br {
+    display: none;
+  }
+}
+
 .team-section {
   display: flex;
   padding-bottom: 90px;
@@ -1831,6 +1849,152 @@
   }
 }
 
+.app-section {
+  background: var(--black, #000);
+  color: var(--background-color);
+  padding: 110px 0;
+}
+
+.app-section .container-md {
+  max-width: 1160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.app-section .text-content {
+  max-width: 760px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.app-section .card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.app-section .card-list .card.gray {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 50px;
+  background: #282828;
+  border-radius: 30px;
+}
+
+@media (max-width: 992px) {
+  .app-section .card-list .card.gray {
+    padding: 50px 20px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-section .card-list .card.gray {
+    flex-direction: column-reverse;
+    padding: 20px;
+    gap: 21px;
+  }
+}
+
+.app-section .card-list .card.gray .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 74px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .app-section .card-list .card.gray .content {
+    max-width: 390px;
+    gap: 20px;
+  }
+}
+
+.app-section .card-list .card.gray .content .main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.app-section .card-list .card.gray .content .main .title {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.app-section .card-list .card.gray .content .main .title .gradient-text {
+  padding-right: 5px;
+  background: radial-gradient(
+    104.03% 101.34% at 7.32% 59.63%,
+    #eb9c00 0%,
+    #ff4769 27.08%,
+    #3d50ff 66.38%,
+    #00b2ff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .app-section .card-list .card.gray .content .description br {
+    display: none;
+  }
+}
+
+.app-section .card-list .card.gray .image-box {
+  display: flex;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.app-section .card-list .card.gray .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app-section .card-list .card.primary {
+  border-radius: 30px;
+  background: var(--text-link-color, #3375f6);
+  color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px 64px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .app-section .card-list .card.primary {
+    gap: 30px;
+    padding: 40px 20px;
+  }
+}
+
+.app-section .card-list .card.primary .content {
+  max-width: 756px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .footer {
   padding: 37px 0;
   display: flex;
@@ -1981,4 +2145,38 @@
   height: auto;
   position: absolute;
   z-index: 99999;
+}
+
+.action-prize-item-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.action-prize-item-box .button {
+  flex-shrink: 0;
+}
+
+.action-prize-item-box .info-text {
+  flex-shrink: 0;
+  display: inline;
+}
+
+@media (max-width: 600px) {
+  .action-prize-item-box {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .action-prize-item-box .info-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .action-prize-item-box .info-text br {
+    display: none;
+  }
 }

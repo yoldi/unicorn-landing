@@ -2,7 +2,6 @@ async function getUtmInviteLink() {
   const response = await fetch(`https://api.crm.poizonshop.ru/api/utm-invite-link${window.location.search}`);
   if(response.ok) {
     const res = await response.json();
-    console.log(res)
     setUrls(res.inviteLinkUrl, res.botStartUrl)
   }
 }
